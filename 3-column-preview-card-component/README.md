@@ -16,7 +16,7 @@ Users should be able to:
 ## Links
 
 - Solution URL: [https://github.com/denizkukul/frontendmentor-challenges/tree/main/3-column-preview-card-component](https://github.com/denizkukul/frontendmentor-challenges/tree/main/3-column-preview-card-component)
-- Live Site URL: [https://frontendmentor-3-column-preview-card-component-challenge.netlify.app/]https://frontendmentor-3-column-preview-card-component-challenge.netlify.app/)
+- Live Site URL: [https://frontendmentor-3-column-preview-card-component-challenge.netlify.app/](https://frontendmentor-3-column-preview-card-component-challenge.netlify.app/)
 
 ## Built with
 
