@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@600;700&display=swap"
+    rel="stylesheet">
+  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+  <link rel="stylesheet" href="stylesheet.css">
+  <title>Frontend Mentor | Rock, Paper, Scissors</title>
+
+</head>
+
+<body>
+
+  <div id="container">
+
+    <div id="main">
+      <div id="header">
+        <div id="logo">
+          <img src="images/logo.svg" alt="Rock paper scissors">
+        </div>
+        <div id="score">
+          <div id="scoretext">
+            SCORE
+          </div>
+          <div id="scoreval">
+            0
+          </div>
+        </div>
+      </div>
+
+      <div class="space1"></div>
+
+      <div id="selectionscreen" class="active">
+
+        <div class="rps button paper">
+          <div class="outtershadow"></div>
+          <div class="outtercircle"></div>
+          <div class="innershadow"></div>
+          <div class="innercircle"></div>
+          <div class="icon"></div>
+        </div>
+
+        <div class="rps button scissors">
+          <div class="outtershadow"></div>
+          <div class="outtercircle"></div>
+          <div class="innershadow"></div>
+          <div class="innercircle"></div>
+          <div class="icon"></div>
+        </div>
+
+        <div class="rps button rock">
+          <div class="outtershadow"></div>
+          <div class="outtercircle"></div>
+          <div class="innershadow"></div>
+          <div class="innercircle"></div>
+          <div class="icon"></div>
+        </div>
+
+        <img id="triangle" src="images/bg-triangle.svg" alt="triangle">
+
+      </div>
+
+      <div id="resultscreen">
+
+        <div id="picks">
+          <div class="rps picked scissors">
+            <div class="outtershadow"></div>
+            <div class="outtercircle"></div>
+            <div class="innershadow"></div>
+            <div class="innercircle"></div>
+            <div class="icon"></div>
+          </div>
+
+          <div class="rps picked unknown">
+            <div class="outtershadow"></div>
+            <div class="outtercircle"></div>
+            <div class="innershadow"></div>
+            <div class="innercircle"></div>
+            <div class="icon"></div>
+          </div>
+
+
+          <div id="youpicked">YOU PICKED</div>
+          <div id="thehousepicked">THE HOUSE PICKED</div>
+        </div>
+
+        <div id="resultpanel">
+          <div id="result">YOU LOSE</div>
+          <div id="playagain">PLAY AGAIN</div>
+        </div>
+
+      </div>
+
+      <div class="space2"></div>
+
+      <div id="rulesbtn">
+        RULES
+      </div>
+
+      <div class="space3"></div>
+
+      <div class="attribution">
+        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+        Coded by <a href="https://github.com/denizkukul" target="_blank">Deniz Kukul</a>.
+      </div>
+    </div>
+
+  </div>
+
+  <div id="rulesscreen">
+
+    <div id="rulespanel">
+      <div class="space1"></div>
+
+      <div id="text">RULES</div>
+
+      <div class="space2"></div>
+
+      <div id="rulesimg">
+        <img src="images/image-rules.svg" alt="rules">
+      </div>
+
+      <div class="space3"></div>
+
+      <div id="close">
+        <img src="images/icon-close.svg" alt="close">
+      </div>
+
+      <div class="space3"></div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>

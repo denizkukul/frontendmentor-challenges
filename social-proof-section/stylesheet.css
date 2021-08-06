@@ -1,0 +1,489 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    background-image: url(images/bg-pattern-top-mobile.svg), url(images/bg-pattern-bottom-mobile.svg);
+    background-attachment: local, local;
+    background-repeat: no-repeat, no-repeat;
+    background-position: top left, bottom right;
+}
+
+#container {
+    width: 375px;
+    padding: 81px 18px 99px;
+    margin: 0 auto;
+}
+
+#header1 {
+    color: rgba(84, 29, 84, 1);
+    font-family: 'Spartan', sans-serif;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 32px;
+    letter-spacing: -3.5%;
+    text-align: center;
+    margin-bottom: 23px;
+}
+
+#header2 {
+    color: rgba(147, 123, 146, 1);
+    font-family: 'Spartan', sans-serif;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 25px;
+    letter-spacing: -3%;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+#ratingpanels {
+    margin-bottom: 49px;
+}
+
+.ratingpanel {
+    background-color: rgba(247, 242, 248, 1);
+    color: rgba(81, 31, 80, 1);
+    width: 327px;
+    height: 78px;
+    font-family: 'Spartan', sans-serif;
+    font-weight: 700;
+    font-size: 13px;
+    border-radius: 8px;
+    margin: 0 auto 16px;
+}
+
+.ratinginfo {
+    display: block;
+    text-align: center;
+}
+
+.icon {
+    text-align: center;
+    height: auto;
+    margin: auto;
+}
+
+.icon img {
+    padding: 15px 4px 13px;
+}
+
+.reviewpanel {
+    background-color: rgba(81, 31, 80, 1);
+    color: white;
+    width: 327px;
+    height: 248px;
+    font-family: 'Spartan', sans-serif;
+    font-weight: 700;
+    font-size: 13px;
+    border-radius: 8px;
+    margin: 0 auto 16px;
+    padding: 40px 26px 0 32px;
+}
+
+.reviewpanel img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: inline-block;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+
+.userinfo {
+    position: relative;
+    padding: 4px 0 0 50px;
+    margin-bottom: 30px;
+}
+
+.username {
+    display: block;
+    margin-bottom: 4px;
+}
+
+.buyerstatus{
+    display: block;
+    color: rgba(238, 104, 164, 1);
+    font-weight: 400;
+}
+
+.review {
+    color: hsl(300, 24%, 96%);
+    font-family: 'Spartan', sans-serif;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 170%;
+    letter-spacing: -2%;
+}
+
+.attribution {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    margin: 0 auto 3vh;
+    width: 100%;
+  }
+
+.attribution a {
+    color: rgb(17, 0, 255);
+}
+
+@media (max-width:374px) {
+
+    body {
+        background-image: none;
+    }
+
+    #container {
+      padding: 81px 0 99px;
+      margin: 0 auto;
+      width: 280px;
+      height: auto;
+      background-color: white;
+      border-radius: 22px;
+      position: relative;
+    }
+
+    .ratingpanel {
+        width: 280px;
+        height: 78px;
+        margin: 0 auto 16px;
+    }
+
+    .reviewpanel {
+        width: 280px;
+        height: 248px;
+        margin: 0 auto 16px;
+        padding: 25px 20px 0;
+    }
+
+    .attribution {
+      width: 200px;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 12px;
+      margin: 0 auto 3vh;
+    }
+  }
+
+@media (min-width:900px) {
+    body {
+        padding: 0;
+        margin: 0;
+        background-image: url(images/bg-pattern-top-desktop.svg), url(images/bg-pattern-bottom-desktop.svg);
+        background-attachment: fixed, fixed;
+        background-repeat: no-repeat, no-repeat;
+        background-position: top left, bottom right;
+    }
+    
+    #container {
+        width: 800px;
+        height: 600px;
+        padding: 0;
+        margin: 0;
+        position: absolute;
+        top: 50vh;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    
+    #header {
+        width: 350px;
+        height: 232px;
+        display: inline-block;  
+        margin: 0;  
+    }
+
+    #header1 {
+        display: inline-block;
+        text-align: left;
+        font-size: 40px;
+        line-height: 45px;
+        padding: 0;
+        margin-bottom: 15px;
+    }
+    
+    #header2 {
+        display: inline-block;
+        text-align: left;
+        padding: 0;
+        margin: 0;
+    }
+    
+    #ratingpanels {
+        display: inline-block;
+        width: 420px;
+        height: 200px;
+        padding: 0;
+        margin: 0 0 30px 25px;
+        position: relative;
+        bottom: 33px;
+    }
+    
+    .ratingpanel {
+        width: 420px;
+        height: 56px;
+        display: flex;
+        padding: 0;
+        margin: 0;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 16px;
+    }
+
+    .icon {
+        flex: 100px;
+        display: inline-block;
+        text-align: center;
+        padding: 0;
+        margin: 0;
+    }
+    
+    .icon img {
+        padding: 0 4px;
+        margin: 0;
+    }
+
+    .ratinginfo {
+        flex: 130px;
+        display: inline-block;
+        text-align: left;
+        padding-bottom: 0;
+        margin: 0;
+    }
+    
+    #reviewpanels {
+        width: 800px;
+        height: 300px;
+        margin: 0;
+        padding: 0;
+        position: relative;
+    }
+
+    .reviewpanel {
+        position: relative;
+        width: 260px;
+        height: 300px;
+        display: inline-block;
+        padding: 40px 26px 0 32px;
+        margin: 0;
+    }
+    
+    .reviewpanel:nth-of-type(1) {
+        margin-right: 8px;
+    }
+
+    .reviewpanel:nth-of-type(2) {
+        margin-right: 8px;
+    }
+
+    .reviewpanel:nth-of-type(3) {
+        margin-right: -4px;
+    }
+    .reviewpanel img {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        display: inline-block;
+        position: absolute;
+        top: 0px;
+        left: 0px;
+    }
+    
+    .userinfo {
+        position: relative;
+        padding: 4px 0 0 50px;
+        margin-bottom: 30px;
+    }
+    
+    .username {
+        display: block;
+        margin-bottom: 4px;
+    }
+    
+    .buyerstatus{
+        display: block;
+        color: rgba(238, 104, 164, 1);
+        font-weight: 400;
+    }
+    
+    .review {
+        color: hsl(300, 24%, 96%);
+        font-family: 'Spartan', sans-serif;
+        font-weight: 400;
+        font-size: 13px;
+        line-height: 170%;
+        letter-spacing: -2%;
+    }
+
+    .attribution {
+        width: 800px;
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 20px;
+        margin: auto;
+        text-align: center;
+    }
+}
+
+@media (min-width:1200px) {
+    
+    #container {
+        width: 1110px;
+        height: 573px;
+        padding: 0;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    
+    #header {
+        width: 425px;
+        height: 232px;
+        display: inline-block;    
+    }
+
+    #header1 {
+        display: inline-block;
+        text-align: left;
+        font-size: 45px;
+        line-height: 48px;
+        padding: 0;
+        margin-bottom: 15px;
+    }
+    
+    #header2 {
+        display: inline-block;
+        text-align: left;
+        padding: 0;
+        margin: 0;
+    }
+    
+    #ratingpanels {
+        display: inline-block;
+        width: 540px;
+        height: 200px;
+        padding: 0;
+        margin: 0 0 73px 141px;
+        position: relative;
+        bottom: 33px;
+    }
+    
+    .ratingpanel {
+        width: 445px;
+        height: 56px;
+        display: flex;
+        padding: 0;
+        margin: 0;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 16px;
+    }
+
+    .ratingpanel:nth-of-type(2) {
+        margin-left: 47px;
+    }
+
+    .ratingpanel:nth-of-type(3) {
+        margin-left: 94px;
+    }
+
+    .icon {
+        flex: 182px;
+        display: inline-block;
+        text-align: center;
+        padding: 0 0 0 14px;
+        margin: 0;
+    }
+    
+    .icon img {
+        padding: 0 4px;
+        margin: 0;
+    }
+
+    .ratinginfo {
+        flex: 264px;
+        display: inline-block;
+        text-align: left;
+        padding-bottom: 0;
+        margin: 0;
+    }
+    
+    #reviewpanels {
+        width: 1110px;
+        height: 266px;
+        margin: 0;
+        padding: 0;
+        position: relative;
+    }
+
+    .reviewpanel {
+        position: relative;
+        width: 350px;
+        height: 234px;
+        display: inline-block;
+        padding: 40px 26px 0 32px;
+        margin: 0;
+    }
+    
+    .reviewpanel:nth-of-type(1) {
+        bottom: 32px;
+        margin: 0 26px 32px 0;
+    }
+
+    .reviewpanel:nth-of-type(2) {
+        bottom: 16px;
+        margin: 16px 26px 16px 0;
+    }
+
+    .reviewpanel img {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        display: inline-block;
+        position: absolute;
+        top: 0px;
+        left: 0px;
+    }
+    
+    .userinfo {
+        position: relative;
+        padding: 4px 0 0 50px;
+        margin-bottom: 30px;
+    }
+    
+    .username {
+        display: block;
+        margin-bottom: 4px;
+    }
+    
+    .buyerstatus{
+        display: block;
+        color: rgba(238, 104, 164, 1);
+        font-weight: 400;
+    }
+    
+    .review {
+        color: hsl(300, 24%, 96%);
+        font-family: 'Spartan', sans-serif;
+        font-weight: 400;
+        font-size: 13px;
+        line-height: 170%;
+        letter-spacing: -2%;
+    }
+
+    .attribution {
+        width: 1110px;
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 20px;
+        margin: auto;
+        text-align: center;
+    }
+}
